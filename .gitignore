@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+correction_log.jsonl
+invalid_log.jsonl
+classify_cache.json
+learned_rules.json
+feedback_cache/
+learn_report.txt
