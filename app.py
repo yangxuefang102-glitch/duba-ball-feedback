@@ -1116,7 +1116,7 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#f0f2f5;color:#333;font-size:13px}
 
 /* ── Header ── */
-.header{background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:14px 24px;display:flex;align-items:center;gap:12px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;padding:14px 24px;display:flex;align-items:center;gap:12px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
 .header h1{font-size:18px;font-weight:600}
 .header .sub{font-size:12px;opacity:.75;margin-top:2px}
 
@@ -1124,18 +1124,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Micr
 .toolbar{background:#fff;padding:10px 24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-bottom:1px solid #e8e8e8}
 .toolbar label{color:#555;white-space:nowrap}
 .toolbar input[type=date],.toolbar select,.toolbar input[type=text]{border:1px solid #d9d9d9;border-radius:4px;padding:5px 8px;font-size:13px;outline:none;color:#333}
-.toolbar input[type=date]:focus,.toolbar select:focus,.toolbar input[type=text]:focus{border-color:#3949ab}
+.toolbar input[type=date]:focus,.toolbar select:focus,.toolbar input[type=text]:focus{border-color:#0f3460}
 .sep{color:#ccc;margin:0 2px}
 .btn{padding:5px 14px;border-radius:4px;border:none;cursor:pointer;font-size:13px;font-weight:500;transition:background .15s}
-.btn-primary{background:#3949ab;color:#fff}.btn-primary:hover{background:#283593}
-.btn-export{background:#00897b;color:#fff}.btn-export:hover{background:#00695c}
+.btn-primary{background:#0f3460;color:#fff}.btn-primary:hover{background:#0c2d6b}
+.btn-export{background:#0f3460;color:#fff}.btn-export:hover{background:#0c2d6b}
 .search-input{width:180px}
 
 /* ── Stats chips ── */
 .stats-bar{background:#fff;padding:8px 24px;border-bottom:1px solid #e8e8e8;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.chip{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:12px;background:#e8eaf6;color:#3949ab;cursor:pointer;transition:all .15s;white-space:nowrap;border:1px solid transparent}
-.chip:hover{border-color:#3949ab}
-.chip.active{background:#3949ab;color:#fff}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:12px;background:#e8eaf6;color:#0c2d6b;cursor:pointer;transition:all .15s;white-space:nowrap;border:1px solid transparent}
+.chip:hover{border-color:#0f3460}
+.chip.active{background:#0f3460;color:#fff}
 .chip .cnt{font-weight:700}
 
 /* ── Filter bar (category dropdown) ── */
@@ -1146,12 +1146,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Micr
 .content{padding:14px 24px}
 .info-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:6px}
 .info-text{color:#888;font-size:12px}
-.info-text strong{color:#3949ab;font-weight:600}
+.info-text strong{color:#1a237e;font-weight:600}
 
 /* ── Table ── */
 .table-wrap{background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:auto}
 table{width:100%;border-collapse:collapse;min-width:1300px}
-thead th{background:#e8eaf6;color:#1a237e;padding:9px 10px;text-align:left;white-space:nowrap;position:sticky;top:0;z-index:1;font-weight:600;border-bottom:2px solid #c5cae9}
+thead th{background:#e8eaf6;color:#0c2d6b;padding:9px 10px;text-align:left;white-space:nowrap;position:sticky;top:0;z-index:1;font-weight:600;border-bottom:2px solid #c5cae9}
 tbody tr{border-bottom:1px solid #f0f0f0;transition:background .1s}
 tbody tr:hover{background:#f5f5ff}
 td{padding:7px 10px;vertical-align:middle;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -1159,11 +1159,11 @@ td.word-col{max-width:280px;white-space:normal;word-break:break-all;line-height:
 
 /* ── Tags ── */
 .tag-vip{display:inline-block;padding:1px 7px;border-radius:10px;background:#fff3e0;color:#e65100;font-size:11px}
-.tag-normal{display:inline-block;padding:1px 7px;border-radius:10px;background:#f5f5f5;color:#999;font-size:11px}
-.cat-tag{display:inline-block;padding:2px 8px;border-radius:4px;background:#e8eaf6;color:#3949ab;font-size:11px;white-space:nowrap}
+.tag-normal{display:inline-block;padding:1px 7px;border-radius:10px;background:#e8eaf6;color:#999;font-size:11px}
+.cat-tag{display:inline-block;padding:2px 8px;border-radius:4px;background:#e8eaf6;color:#0c2d6b;font-size:11px;white-space:nowrap}
 /* ── 手动分类下拉 ── */
-.cat-select{border:1px solid #c5cae9;border-radius:4px;background:#e8eaf6;color:#3949ab;font-size:11px;padding:2px 4px;cursor:pointer;outline:none;max-width:160px}
-.cat-select:focus{border-color:#3949ab;background:#fff}
+.cat-select{border:1px solid #c5cae9;border-radius:4px;background:#e8eaf6;color:#0c2d6b;font-size:11px;padding:2px 4px;cursor:pointer;outline:none;max-width:160px}
+.cat-select:focus{border-color:#0f3460;background:#fff}
 .cat-select.saving{opacity:.5;pointer-events:none}
 .cat-select.saved{border-color:#43a047;background:#e8f5e9;color:#2e7d32}
 .save-tip{font-size:10px;color:#43a047;margin-left:4px;display:none}
@@ -1178,8 +1178,8 @@ tr.row-invalid td{text-decoration:line-through;color:#bbb}
 /* ── Pagination ── */
 .pag{display:flex;align-items:center;gap:6px;margin-top:14px;justify-content:center;flex-wrap:wrap}
 .pag button{padding:4px 10px;border:1px solid #d9d9d9;border-radius:4px;background:#fff;cursor:pointer;font-size:12px}
-.pag button:hover{border-color:#3949ab;color:#3949ab}
-.pag button.active{background:#3949ab;color:#fff;border-color:#3949ab}
+.pag button:hover{border-color:#0f3460;color:#1a237e}
+.pag button.active{background:#0f3460;color:#fff;border-color:#0f3460}
 .pag .pinfo{font-size:12px;color:#999;margin-left:6px}
 
 .loading{text-align:center;padding:50px;color:#aaa}
@@ -1188,8 +1188,8 @@ tr.row-invalid td{text-decoration:line-through;color:#bbb}
 /* ── Tabs ── */
 .tabs{display:flex;gap:0;background:#fff;border-bottom:2px solid #e8eaf6;padding:0 24px}
 .tab-btn{padding:10px 20px;cursor:pointer;font-size:13px;font-weight:500;color:#888;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s;background:none;border-top:none;border-left:none;border-right:none}
-.tab-btn:hover{color:#3949ab}
-.tab-btn.active{color:#3949ab;border-bottom:2px solid #3949ab;font-weight:600}
+.tab-btn:hover{color:#1a237e}
+.tab-btn.active{color:#1a237e;border-bottom:2px solid #1a237e;font-weight:600}
 .tab-panel{display:none}.tab-panel.active{display:block}
 
 /* ── 趋势图 / 占比图 共用 ── */
@@ -1348,16 +1348,16 @@ const CAT_COLORS = {
   "被捆绑安装，反复安装": "#e53935",
   "不好用、不想用、不需要": "#8e24aa",
   "弹窗广告": "#f4511e",
-  "功能问题": "#3949ab",
-  "其他": "#90a4ae",
+  "功能问题": "#818cf8",
+  "其他": "#a78bfa",
   "其他原因": "#b0bec5",
-  "软件兼容问题": "#00897b",
+  "软件兼容问题": "#3949ab",
   "收费原因": "#f9a825",
   "推广安装其他软件、插件": "#d81b60",
   "误删误拦": "#6d4c41",
-  "修改默认": "#1e88e5",
+  "修改默认": "#5c6bc0",
   "影响其他软件": "#43a047",
-  "用竞品": "#00acc1",
+  "用竞品": "#7986cb",
   "占用高，导致电脑卡慢": "#fb8c00",
   "谩骂": "#757575"
 };
